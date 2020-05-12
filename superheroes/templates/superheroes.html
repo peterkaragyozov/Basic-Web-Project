@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Superheroes App</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}" />
+</head>
+<body>
+    <h1>Welcome, Hero!!</h1>
+    <a href="{% url 'create superhero' %}">Create superhero</a>
+    <ul>
+        {% for superhero in superhero_list %}
+            <li>
+                {{ superhero.name }}
+            </li>
+
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

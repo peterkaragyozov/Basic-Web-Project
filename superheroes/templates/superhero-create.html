@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Superhero</title>
+</head>
+<body>
+    <form action="/superhero-create/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button>Create</button>
+    </form>
+</body>
+</html>
